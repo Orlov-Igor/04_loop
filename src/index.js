@@ -1,12 +1,22 @@
 function xmasTree(pyramidHeight, symbol) {
     let xmas = '';
-
-    // Use variables xmas, pyramidHeight, symbol
-
+    var pyramidHeight = prompt('Введите высоту пирамиды');
+    
+    for (var i = 1; i <= pyramidHeight; i++) {
+      for (var j = 1; j <= pyramidHeight; j++) {
+        if (j > i) {
+          break;
+        };
+        xmas += symbol;
+      };
+      xmas += "\n";
+    };
+    
     return xmas;
 }
 
-// Check your code
-console.log(masTree(5, '*'));
+
+console.log(xmasTree(5, '*'));
 
 module.exports = { xmasTree };
+
