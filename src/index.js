@@ -3,13 +3,15 @@
 //     var pyramidHeight /* = prompt('Введите высоту пирамиды')*/;
     
 //     for (var i = 1; i <= pyramidHeight; i++) {
-//       for (var j = 1; j <= pyramidHeight; j++) {
-//         if (j > i) {
+      
+//         for (var j = 1; j <= pyramidHeight; j++) {
+        
+//           if (j > i) {
 //           break;
+//           };
+//           xmas += symbol;
 //         };
-//         xmas += symbol;
-//       };
-//       xmas += '\n';
+//         xmas += '\n';
 //     };
     
 //     return xmas;
@@ -28,14 +30,14 @@ function xmasTree(pyramidHeight, symbol) {
     var space = ' ';
 
     for (var i = 1; i <= pyramidHeight; i++) {
-      
+
         for (var j = 1; j <= pyramidHeight; j++) {
-        
+
             if (j > pyramidHeight - i) {
             xmas += symbol;
             } else {
             xmas += space;
-            }
+            };
         };
         
         for (var j = 2; j <= pyramidHeight; j++) {
@@ -54,4 +56,5 @@ function xmasTree(pyramidHeight, symbol) {
 console.log(xmasTree(5, '$'));
 
 module.exports = { xmasTree };
+
 
