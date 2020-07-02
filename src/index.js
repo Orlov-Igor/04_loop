@@ -53,12 +53,14 @@ function xmasTree(pyramidHeight, symbol) {
       xmas += '\n';
     };
     return xmas;
-}
+};
 
-console.log(xmasTree(5, '$'));
+let vertSize = prompt('Введите высоту пирамиды');
+let symbol = prompt('Введите символ');
+
+console.log(xmasTree(vertSize, symbol));
 
 module.exports = { xmasTree };
-
 
 
 // Домашка занятия №5
